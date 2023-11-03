@@ -1,0 +1,15 @@
+{
+    "name": "lietotajs/rick-n-mort-web",
+    "autoload": {
+        "psr-4": {
+            "Lietotajs\\RickNMortWeb\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "GirtsFreimanis",
+            "email": "girtslp@gmail.com"
+        }
+    ],
+    "require": {}
+}
