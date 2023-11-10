@@ -2,8 +2,16 @@
     <div>
         <ul>
             <li>
+                <p>{{ city }}</p>
+            </li>
+            <li>
+                <form method="GET">
+                    <input type="text" name="city" placeholder="Enter city"/>
+                    <button type="submit">Get Weather</button>
+                </form>
+            </li>
+            <li>
                 <a href="/">Rick & Morty Episodes</a>
-
             </li>
             <li>
                 <form action="/search" method="GET">
@@ -11,6 +19,7 @@
                     <button type="submit">Search</button>
                 </form>
             </li>
+
         </ul>
     </div>
 </nav>

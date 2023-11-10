@@ -2,7 +2,7 @@
     "name": "lietotajs/rick-n-mort-web",
     "autoload": {
         "psr-4": {
-            "Lietotajs\\RickNMortWeb\\": "src/"
+            "App\\": "app/"
         }
     },
     "authors": [
@@ -11,5 +11,11 @@
             "email": "girtslp@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "nikic/fast-route": "^1.3",
+        "nesbot/carbon": "^2.71",
+        "twig/twig": "^3.7",
+        "guzzlehttp/guzzle": "^7.8",
+        "vlucas/phpdotenv": "^5.5"
+    }
 }

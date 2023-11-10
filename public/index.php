@@ -2,6 +2,8 @@
 
 use App\Response;
 use App\Router\Router;
+use App\WeatherApi;
+use Carbon\Carbon;
 use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
 use Twig\Extension\DebugExtension;
@@ -13,6 +15,8 @@ $twig = new Environment($loader);
 
 $twig->addExtension(new DebugExtension());
 
+$twig->addGlobal("weather", new WeatherApi("Berlin"));
+$twig->addGlobal("currentTime", Carbon::now("Europe/Berlin"));
 $currentDate = new DateTime();
 
 $routeInfo = Router::dispatch();
@@ -29,7 +33,6 @@ switch ($routeInfo[0]) {
     case FastRoute\Dispatcher::FOUND:
         [$className, $method] = $routeInfo[1];
         $vars = $routeInfo[2];
-
         $response = (new $className())->{$method}($vars);
 
         /** @var Response $response */

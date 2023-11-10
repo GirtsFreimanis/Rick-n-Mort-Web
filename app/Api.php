@@ -22,9 +22,9 @@ class Api
         ]);
     }
 
-    public function fetchEpisodes(): array // TODO EpisodeCollection
+    public function fetchEpisodes(): array
     {
-        $episodes = []; // TODO: EpisodeCollection
+        $episodes = [];
 
         $page = 1;
 
@@ -39,7 +39,7 @@ class Api
                     $result->name,
                     Carbon::parse($result->air_date),
                     $result->episode,
-                    []//$this->fetchCharacters($result->characters)
+                    []
                 );
             }
 
