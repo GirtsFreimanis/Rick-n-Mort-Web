@@ -9,7 +9,7 @@
     {% for character in episode.characters %}
         <div class="character">
             <img src="{{ character.imgUrl }}">
-            {{ character.name }}
+            <p id="characterName">{{ character.name }}</p>
         </div>
     {% endfor %}
 </section>

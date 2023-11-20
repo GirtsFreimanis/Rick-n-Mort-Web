@@ -80,6 +80,9 @@ section a {
 }
 
 footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
     background-color: black;
@@ -105,3 +108,18 @@ img {
     padding-bottom: 10px;
     border-radius: 10px;
 }
+
+#characterName {
+    vertical-align: center;
+    padding: 20px;
+}
+
+#weatherinfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+#weatherinfo h2 {
+    padding-left: 50px; /* Remove default margin for h2 */
+}
+
